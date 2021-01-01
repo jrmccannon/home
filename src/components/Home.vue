@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <Posts title="Latest"></Posts>
+    <PostList title="Latest"></PostList>
   </div>
 </template>
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import Posts from './Posts';
+import PostList from './PostList.vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
-    Posts
+    PostList
   }
 });
 </script>

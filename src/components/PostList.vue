@@ -5,17 +5,17 @@
   </ol>
 </template>
 
-  public mounted() {
-    const post = new Post();
-    post.title = 'fish';
-    post.body = 'body body body';
+public mounted() {
+const post = new Post();
+post.title = 'fish';
+post.body = 'body body body';
 
-    this.posts.push(post);
-  }
+this.posts.push(post);
+}
 }
 <script lang="ts">
 import {defineComponent} from 'vue';
-import Post from "../models/Post";
+import Posts from "../models/Posts";
 
 export default defineComponent({
   name: 'PostList',
@@ -26,9 +26,8 @@ export default defineComponent({
       default: 'Recent'
     },
     posts: {
-      type: Post,
-      required: false,
-      default: []
+      type: Posts,
+      required: false
     }
   }
 });
