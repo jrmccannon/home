@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Home></Home>
+  <div>
+    <Sidenav></Sidenav>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import Home from './components/Home.vue';
+import Sidenav from './components/Sidenav.vue';
 
 export default {
   name: 'App',
   components: {
-    Home
+    Sidenav
   }
 }
 </script>
+
+<style>
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
+
+  body {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+</style>
