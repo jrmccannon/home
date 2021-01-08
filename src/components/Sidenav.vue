@@ -1,8 +1,12 @@
 <template>
   <div id="sidenav">
-    <button class="toggle">Sidebar</button>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <button @click.prevent="toggle">
+      <i>Toggle</i>
+    </button>
+    <div id="links">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+    </div>
   </div>
 </template>
 
@@ -11,40 +15,40 @@ import {defineComponent} from 'vue';
 
 defineComponent({
   name: 'Sidenav',
-
+  data() {
+    return {
+      showMenu: true
+    };
+  },
+  methods: {
+    toggle($event) {
+      console.log('test')
+    }
+  }
 })
 </script>
 
 <style>
   #sidenav {
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    position: absolute;
+    display: block;
+  }
+
+  #toggle {
+    padding: 0px 10px;
+  }
+
+  #links {
+    height: 100vh;
     background-color: grey;
     overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+    z-index: 1;
+    margin: -50px 0px -300px -30px;
+    padding: 90px 20px 0px;
   }
 
-  #sidenav a {
+  #links a {
     display: block;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    padding: 8px 8px 8px 32px;
+    padding: 10px;
   }
-
-  #sidenav a:hover {
-    color: lightseagreen;
-  }
-
-  #sidenav .toggle {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: small;
-  }
-
 </style>

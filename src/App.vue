@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Sidenav></Sidenav>
+    <Header></Header>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Sidenav from './components/Sidenav.vue';
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    Sidenav
+    Header
   }
 }
 </script>
@@ -25,8 +25,7 @@ export default {
   }
 
   body {
-    width: 1000px;
-    margin: 0 auto;
+    margin: 0 0;
     overflow: auto;
   }
 </style>
