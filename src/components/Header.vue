@@ -24,6 +24,5 @@ export default defineComponent({
   color: white;
   background-color: lightseagreen;
   font-size: medium;
-  width: 100%;
 }
 </style>

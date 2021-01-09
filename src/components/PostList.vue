@@ -1,8 +1,10 @@
 <template>
-  <h2>{{ title }} Posts</h2>
-  <ol>
-    <li :key="index" v-for="(post, index) in postsValue.posts">{{ post.title }}</li>
-  </ol>
+  <div id="posts-list">
+    <h2>{{ title }} Posts</h2>
+    <ol>
+      <li :key="index" v-for="(post, index) in postsValue.posts">{{ post.title }}</li>
+    </ol>
+  </div>
 </template>
 
 <script lang="ts">
@@ -34,15 +36,15 @@ export default defineComponent({
   methods: {
     dummyData: function () {
       const post = new Post();
-      post.title = 'fish';
+      post.title = 'Making a personal website: Part 1';
       post.body = 'body body body';
 
       const post2 = new Post();
-      post2.title = 'cats';
+      post2.title = 'Vue 3 is a weird world and the composition api is strange';
       post2.body = 'body body body';
 
       const post3 = new Post();
-      post3.title = 'dog';
+      post3.title = 'How do I use CSS?!?!?!';
       post3.body = 'body body body';
 
       const data = new Posts();
@@ -56,3 +58,12 @@ export default defineComponent({
   }
 });
 </script>
+
+<style>
+  #posts-list {
+    position: relative;
+    align-content: center;
+    margin-left: -275px;
+    width: 700px;
+  }
+</style>

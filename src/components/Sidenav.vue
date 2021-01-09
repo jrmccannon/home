@@ -1,9 +1,9 @@
 <template>
   <div id="sidenav">
-    <button @click.prevent="toggle">
-      <i>Toggle</i>
+    <button id="toggle" @click="toggle">
+      Toggle
     </button>
-    <div id="links">
+    <div id="links" :class="{hidden: !showMenu}">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </div>
@@ -13,16 +13,16 @@
 <script lang="ts">
 import {defineComponent} from 'vue';
 
-defineComponent({
+export default defineComponent({
   name: 'Sidenav',
   data() {
     return {
       showMenu: true
-    };
+    }
   },
   methods: {
-    toggle($event) {
-      console.log('test')
+    toggle() {
+      this.showMenu = !this.showMenu;
     }
   }
 })
@@ -32,9 +32,11 @@ defineComponent({
   #sidenav {
     position: absolute;
     display: block;
+    align-content: center;
   }
 
   #toggle {
+    align-content: center;
     padding: 0px 10px;
   }
 
@@ -50,5 +52,9 @@ defineComponent({
   #links a {
     display: block;
     padding: 10px;
+  }
+
+  .hidden {
+    display: none
   }
 </style>
