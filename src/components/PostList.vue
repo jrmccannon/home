@@ -1,9 +1,10 @@
 <template>
   <div id="posts-list">
     <h2>{{ title }} Posts</h2>
-    <ol>
+    <ol v-if="posts">
       <li :key="index" v-for="(post, index) in postsValue.posts">{{ post.title }}</li>
     </ol>
+    <div v-else>No posts to show.</div>
   </div>
 </template>
 
