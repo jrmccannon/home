@@ -1,12 +1,12 @@
 <template>
   <div id="sidenav">
     <button id="toggle" @click="toggle">
-      Toggle
+        <svg class="h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </button>
-    <div id="links" :class="{hidden: !showMenu}">
+    <nav id="links" :class="{hidden: !showMenu}">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-    </div>
+    </nav>
   </div>
 </template>
 
@@ -36,8 +36,7 @@ export default defineComponent({
   }
 
   #toggle {
-    align-content: center;
-    padding: 0px 10px;
+    @apply flex items-center px-3 py-2 border rounded;
   }
 
   #links {

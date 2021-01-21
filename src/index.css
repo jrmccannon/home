@@ -5,3 +5,8 @@
   text-align: center;
   color: #2c3e50;
 }
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
