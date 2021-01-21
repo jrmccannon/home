@@ -19,6 +19,5 @@ export default defineComponent({
 <style>
   .home {
     align-content: center;
-    padding: 0px 400px 0px;
   }
 </style>

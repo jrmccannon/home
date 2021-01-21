@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <router-view></router-view>
+    <router-view class="content"></router-view>
   </div>
 </template>
 
@@ -27,5 +27,9 @@ export default {
   body {
     margin: 0 0;
     overflow: auto;
+  }
+
+  .content {
+    padding: 0px 400px 0px;
   }
 </style>

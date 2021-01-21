@@ -22,3 +22,8 @@ defineComponent({
   name: "About"
 });
 </script>
+
+<style>
+  .about {
+  }
+</style>
