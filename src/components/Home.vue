@@ -18,6 +18,5 @@ export default defineComponent({
 
 <style>
   .home {
-    align-content: center;
   }
 </style>

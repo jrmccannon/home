@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="font-sans">
     <Header></Header>
-    <router-view class="content"></router-view>
+    <router-view class=""></router-view>
   </div>
 </template>
 
@@ -18,18 +18,11 @@ export default {
 
 <style>
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
   }
 
   body {
-    margin: 0 0;
-    overflow: auto;
   }
 
   .content {
-    padding: 0px 400px 0px;
   }
 </style>

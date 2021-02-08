@@ -26,4 +26,9 @@ export default defineComponent({
 <style>
   .about {
   }
+
+  h1 {
+
+  }
+
 </style>
