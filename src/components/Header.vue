@@ -7,7 +7,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </nav>
-    <div class="flex-grow ">
+    <div class="flex-grow">
       Jared McCannon's Blog
     </div>
   </div>

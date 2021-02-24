@@ -2,16 +2,18 @@
   <div class="about">
     <h1>What is this?</h1>
 
-    <p>My name is Jared McCannon. I am a Senior Software Engineer at AccuLynx in Beloit, WI. The goal of this website is
-    act as a bit of a home base and living resume for me. I plan to have all my personal projects hosted here in one form
-    or another. Since blogging thoughts seems to be a good medium for learning, this will also act as a self-hosted spot
-    for my knowledge share and learning.</p>
+    <p>My name is Jared McCannon. Professionally, I'm a Sr. Software Engineer. Personally, I'm a father, husband, and all around
+      tinkerer.  I enjoy reading, learning, exercise, cooking, and improving things.</p>
+
+      <h1>What's the point of this?</h1>
+      <p>The goal of this website is two fold. One part is to act as a way of recording my methods and thoughts while working
+      on projects. The other part is share those findings and process with others.</p>
 
     <h1>Where can you find me?</h1>
 
     <p>I am very inactive on the following social media links.</p>
-
-    <a href="https://twitter.com/jaredmccannon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jaredmccannon</a>
+    <a href="https://twitter.com/jaredmccannon?ref_src=twsrc%5Etfw">Follow @jaredmccannon</a>
+    <a href="">Github</a>
 
   </div>
 </template>
