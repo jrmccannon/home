@@ -2,12 +2,16 @@
   <div class="about">
     <h1>What is this?</h1>
 
-    <p>My name is Jared McCannon. Professionally, I'm a Sr. Software Engineer. Personally, I'm a father, husband, and all around
-      tinkerer.  I enjoy reading, learning, exercise, cooking, and improving things.</p>
+    <p>
+      My name is Jared McCannon. Professionally, I'm a Sr. Software Engineer. Personally, I'm a father, husband, and all around
+      tinkerer.  I enjoy reading, learning, exercise, cooking, and improving things.
+    </p>
 
-      <h1>What's the point of this?</h1>
-      <p>The goal of this website is two fold. One part is to act as a way of recording my methods and thoughts while working
-      on projects. The other part is share those findings and process with others.</p>
+    <h1>What's the point of this?</h1>
+    <p>
+      The goal of this website is two fold. One part is to act as a way of recording my methods and thoughts while working
+      on projects. The other part is share those findings and process with others.
+    </p>
 
     <h1>Where can you find me?</h1>
 
@@ -27,10 +31,14 @@ export default defineComponent({
 
 <style>
   .about {
+    padding: 40px 90px;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
   }
 
   h1 {
-
+    font-size: large;
   }
 
 </style>

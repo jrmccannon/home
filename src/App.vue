@@ -1,7 +1,7 @@
 <template>
   <div class="font-sans">
     <Header></Header>
-    <router-view class=""></router-view>
+    <router-view class="content"></router-view>
   </div>
 </template>
 
@@ -21,8 +21,12 @@ export default {
   }
 
   body {
+    width: 100%;
   }
 
   .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
